@@ -1,8 +1,6 @@
-[TO BE COMPLETED]
+[INCOMPLETE / TO BE COMPLETED SOON]
 
 # Fraud Analysis
-
-<br>
 
 For better engagement, I incorporated sounds, animations, and some analysis into this report.  
 
@@ -10,10 +8,12 @@ For better engagement, I incorporated sounds, animations, and some analysis into
 
 <br><br>
 
-1. Introduction:
+### <strong>1. Introduction:</strong>
 ![1 Intro](https://github.com/user-attachments/assets/b9ab7a59-f7c6-42af-8967-22ccbaf1252c)
 
 Description:
+
+Dataset source: https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download
 
 Data Shape: 6,362,620 rows, 11 cols
 
@@ -33,7 +33,7 @@ Data Shape: 6,362,620 rows, 11 cols
 
 <br>
 
-2. Overview:
+### <strong>2. Overview:</strong>
 ![2 Overview](https://github.com/user-attachments/assets/5975d26b-aec2-4c34-81bb-3e7907ee9f89)
 
 Analysis:
@@ -43,7 +43,7 @@ Analysis:
 - Out of 6M+ instances were initially suspected to be non_fraudulent, but 8197 were identified as fraudulent.
 <br>
 
-2.1 Overview - Drill-through:
+### <strong>2.1 Overview - Drill-through:</strong>
 ![3 Drill-through](https://github.com/user-attachments/assets/f76953cd-0dc9-4a59-b163-710b072ac32a)
 
 Analysis:
@@ -51,11 +51,11 @@ Analysis:
 - Plus $11.98bn lost from the 8197 misclassified caes, originally suspected as no-fraudulent.
 <br>
 
-3. Details: Non-Fraudulent 
+### <strong>3. Details: Non-Fraudulent:</strong>
 ![4 Non-Fraud](https://github.com/user-attachments/assets/53d8b24e-f411-4989-8de3-ab0a47eda3f7)
 
 Analysis:
--There are no instances of large transactions.
+- There are no instances of large transactions.
 - CASH IN is is thge most frequently used transaction type amoung senders holding higher balances.
 - Receivers generally maintain higher balances compared to senders.
 - A significant amount of funds are received only though TRANSFER.
@@ -63,7 +63,7 @@ Analysis:
 - A large amounts are often transferred around 300th hour (equiv of 12.5th day.)
 <br>
 
-5. Details: Fraudulent 
+### <strong>5. Details: Fraudulent:</strong> 
 ![5 Fraud](https://github.com/user-attachments/assets/b13de844-331a-4092-974f-a7486ee439a6)
 
 Analysis:
@@ -73,5 +73,3 @@ Analysis:
 - Transactions are usually around $1M, and do not exceed $10M.
 <br>
 
-
-Dataset source: https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download

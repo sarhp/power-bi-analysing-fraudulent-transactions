@@ -4,7 +4,7 @@
 
 For better engagement, I incorporated sounds, animations, and some analysis into this report.  
 
-[Video version (recommended)](https://www.youtube.com/watch?v=OpUfc_sQEvo)
+[Video version (Strongly recommended)](https://www.youtube.com/watch?v=OpUfc_sQEvo)
 
 <br><br>
 

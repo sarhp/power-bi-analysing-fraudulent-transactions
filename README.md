@@ -12,11 +12,11 @@ For better engagement, I incorporated sound effects, animations, and some analys
 https://www.youtube.com/watch?v=OpUfc_sQEvo
 
 <br>
-Static version below:
 <br>
 <br>
 <br>
 
+---
 
 ### <strong>1. Introduction:</strong>
 ![1 Intro](https://github.com/user-attachments/assets/b9ab7a59-f7c6-42af-8967-22ccbaf1252c)

@@ -1,6 +1,6 @@
 [INCOMPLETE / TO BE COMPLETED SOON]
 
-# Fraud Analysis
+# Fraud Insights 🕵️‍♀️
 
 For better engagement, I incorporated sounds, animations, and some analysis into this report.  
 

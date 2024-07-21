@@ -1,4 +1,4 @@
-# Fraud Insights  <img src="https://github.com/user-attachments/assets/d7bdc418-9e84-4b81-9200-76eed6fcd16d" alt="Description of Image" style="width: 5%; height: auto;"> <img src="https://github.com/user-attachments/assets/e222957a-3c8c-4e47-9d4c-ae4ea760a748" alt="Description of Image" style="width: 5%; height: auto;">
+# Fraud Insights  <img src="https://github.com/user-attachments/assets/d7bdc418-9e84-4b81-9200-76eed6fcd16d" alt="Description of Image" style="width: 6%; height: auto;"> <img src="https://github.com/user-attachments/assets/e222957a-3c8c-4e47-9d4c-ae4ea760a748" alt="Description of Image" style="width: 6%; height: auto;">
 
 <br>
 <br>

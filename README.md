@@ -1,18 +1,18 @@
 # Fraud Insights  <img src="https://github.com/user-attachments/assets/d7bdc418-9e84-4b81-9200-76eed6fcd16d" alt="Description of Image" style="width: 6%; height: auto;"> <img src="https://github.com/user-attachments/assets/e222957a-3c8c-4e47-9d4c-ae4ea760a748" alt="Description of Image" style="width: 6%; height: auto;">
+[Dataset source](https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download)
 
 <br>
 <br>
-
-For better engagement, I incorporated sounds, animations, and some analysis into this report.  
-
-
-[Video version (Strongly recommended)](https://www.youtube.com/watch?v=OpUfc_sQEvo)
-
 <br>
 
-, or static version below:
+For better engagement, I incorporated sound effects, animations, and some analysis into this report.  
+
+![shortened (2)](https://github.com/user-attachments/assets/7df4f0dc-9e72-42a7-9388-8c13cf627a8f)
+
+https://www.youtube.com/watch?v=OpUfc_sQEvo
 
 <br>
+Static version below:
 <br>
 <br>
 <br>
@@ -23,7 +23,7 @@ For better engagement, I incorporated sounds, animations, and some analysis into
 
 Description:
 
-Dataset source: https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download
+[Dataset source](https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download)
 
 Data Shape: 6,362,620 rows, 11 cols
 

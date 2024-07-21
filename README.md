@@ -1,8 +1,6 @@
-[INCOMPLETE / TO BE COMPLETED SOON]
+# Fraud Insights  <img src="https://github.com/user-attachments/assets/d7bdc418-9e84-4b81-9200-76eed6fcd16d" alt="Description of Image" style="width: 5%; height: auto;"> <img src="https://github.com/user-attachments/assets/e222957a-3c8c-4e47-9d4c-ae4ea760a748" alt="Description of Image" style="width: 5%; height: auto;">
 
-
-# Fraud Insights  <img src="https://github.com/user-attachments/assets/d7bdc418-9e84-4b81-9200-76eed6fcd16d" alt="Description of Image" style="width: 7%; height: auto;"> <img src="https://github.com/user-attachments/assets/e222957a-3c8c-4e47-9d4c-ae4ea760a748" alt="Description of Image" style="width: 7%; height: auto;">
-
+<br>
 <br>
 
 For better engagement, I incorporated sounds, animations, and some analysis into this report.  
@@ -10,11 +8,15 @@ For better engagement, I incorporated sounds, animations, and some analysis into
 
 [Video version (Strongly recommended)](https://www.youtube.com/watch?v=OpUfc_sQEvo)
 
-<br><br>
-, or static version below:
-<br><br><br>
+<br>
 
----
+, or static version below:
+
+<br>
+<br>
+<br>
+<br>
+
 
 ### <strong>1. Introduction:</strong>
 ![1 Intro](https://github.com/user-attachments/assets/b9ab7a59-f7c6-42af-8967-22ccbaf1252c)

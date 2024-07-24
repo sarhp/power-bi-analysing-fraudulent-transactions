@@ -47,7 +47,7 @@ Data Shape: 6,362,620 rows, 11 cols
 ![2 Overview](https://github.com/user-attachments/assets/5975d26b-aec2-4c34-81bb-3e7907ee9f89)
 
 Analysis:
-- Out of a total of 6,362,620 instancesm there were 8,213 cases of fraud which is 0.13%, eqivalent of $12.06bn out of $1.14T worth of transactions.
+- Out of a total of 6,362,620 instances, there are 8,213 cases of fraud which is 0.13%, eqivalent of $12.06bn out of $1.14T worth of transactions. 
 - Fradulent transactions are conducted only through CASH OUT and TRANSFER.
 - There are 16 instances of suspected of fraud, all of which were confirmed as actual fraud.
 - Out of 6M+ instances were initially suspected to be non_fraudulent, but 8197 were identified as fraudulent.

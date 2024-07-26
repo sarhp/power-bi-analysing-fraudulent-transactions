@@ -1,24 +1,26 @@
-# Fraud Insights  <img src="https://github.com/user-attachments/assets/d7bdc418-9e84-4b81-9200-76eed6fcd16d" alt="Description of Image" style="width: 6%; height: auto;"> <img src="https://github.com/user-attachments/assets/e222957a-3c8c-4e47-9d4c-ae4ea760a748" alt="Description of Image" style="width: 6%; height: auto;">
+# Fraud Insights  
+
+Objective: Perform exploratory data analysis to investigate patterns and trends in fraudulent transactions.
+
 [Dataset source](https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download)
 
-<br>
-<br>
-<br>
+<br><br>
 
-For better engagement, I incorporated sound effects, animations, and some analysis into this report.  
-
-![shortened (2)](https://github.com/user-attachments/assets/7df4f0dc-9e72-42a7-9388-8c13cf627a8f)
+**Animated version (link provided below):** 
 
 https://www.youtube.com/watch?v=OpUfc_sQEvo
 
-<br>
-<br>
-<br>
-<br>
+![fraud gif](https://github.com/user-attachments/assets/a7093946-98e6-4ba7-b2bc-d842cd46fda3)
+
+(For better engagement, I incorporated sound effects, animations, and some analysis into this report)
 
 ---
 
-### <strong>1/5 Introduction:</strong>
+<br>
+
+**Static version:**
+
+1/5 Introduction:
 ![1 Intro](https://github.com/user-attachments/assets/b9ab7a59-f7c6-42af-8967-22ccbaf1252c)
 
 Description:

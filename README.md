@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=OpUfc_sQEvo
 
 **Static version:**
 
-1/5 Introduction:
+1/5. Introduction:
 ![1 Intro](https://github.com/user-attachments/assets/b9ab7a59-f7c6-42af-8967-22ccbaf1252c)
 
 Description:
@@ -45,7 +45,7 @@ Data Shape: 6,362,620 rows, 11 cols
 
 <br>
 
-### <strong>2/5 Overview:</strong>
+2/5. Overview:
 ![2 Overview](https://github.com/user-attachments/assets/5975d26b-aec2-4c34-81bb-3e7907ee9f89)
 
 Analysis:
@@ -55,7 +55,7 @@ Analysis:
 - Out of 6M+ instances were initially suspected to be non_fraudulent, but 8197 were identified as fraudulent.
 <br>
 
-### <strong>3/5 Overview - Drill-through:</strong>
+3/5. Overview - Drill-through:
 ![3 Drill-through](https://github.com/user-attachments/assets/f76953cd-0dc9-4a59-b163-710b072ac32a)
 
 Analysis:
@@ -63,7 +63,7 @@ Analysis:
 - Plus $11.98bn lost from the 8197 misclassified caes, originally suspected as no-fraudulent.
 <br>
 
-### <strong>4/5 Details: Non-Fraudulent:</strong>
+4/5. Details - Non-Fraudulent:
 ![4 Non-Fraud](https://github.com/user-attachments/assets/53d8b24e-f411-4989-8de3-ab0a47eda3f7)
 
 Analysis:
@@ -75,7 +75,7 @@ Analysis:
 - A large amounts are often transferred around 300th hour (equiv of 12.5th day.)
 <br>
 
-### <strong>5/5 Details: Fraudulent:</strong> 
+5/5. Details - Fraudulent:
 ![5 Fraud](https://github.com/user-attachments/assets/b13de844-331a-4092-974f-a7486ee439a6)
 
 Analysis:
@@ -84,4 +84,10 @@ Analysis:
 - Fraudulent transactiosn do not follow a specific time pattern.
 - Transactions are usually around $1M, and do not exceed $10M.
 <br>
+
+Summary:
+
+![image](https://github.com/user-attachments/assets/d9e8e606-e31a-43af-917b-9fc4b50f6399)
+
+
 

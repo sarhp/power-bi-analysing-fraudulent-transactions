@@ -6,9 +6,8 @@ Objective: Perform exploratory data analysis to investigate patterns and trends 
 
 <br><br>
 
-**Animated version (link provided below):** 
+[Animated version - Youtube](https://www.youtube.com/watch?v=OpUfc_sQEvo)
 
-https://www.youtube.com/watch?v=OpUfc_sQEvo
 
 ![fraud gif](https://github.com/user-attachments/assets/a7093946-98e6-4ba7-b2bc-d842cd46fda3)
 

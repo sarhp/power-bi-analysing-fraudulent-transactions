@@ -60,12 +60,39 @@ Dataset consists of 6,362,620 with 11 columns - incl. transaction type, amount, 
 * [About Dataset](#about-dataset)
 * [Business Problem](#business-problem)
 * [Data Analysis Plan](#data-analysis-plan)
-* [Preprocessing Data (optional) - Stratified Data Sampling](#preprocessing-data(optional)-stratifieddatasampling)
-* [Preprocessing Data - Cleaning and Transforming](#preprocessingdatacleaningandtranforming)
+* [Preprocessing Data - Optional Stratified Data Sampling](#preprocessing-data---optional-stratified-data-sampling)
+* [Preprocessing Data - Cleaning and Transforming](#preprocessing-data-cleaning-and-transforming)
 * [Dashboard](#dashboard)
 * [Analysis](#analysis)
 
 <br>
+
+
+<br>
+
+## 🚩About Dataset
+`step`: Maps a unit of time in the real world. In this case, 1 step = 1 hour of time. Total steps = 744 (30 days simulation).  
+
+`type`: Type of transaction: CASH-IN, CASH-OUT, DEBIT, PAYMENT, and TRANSFER.  
+
+`amount`: The amount of the transaction in local currency.  
+
+`nameOrig`: Customer who started the transaction.  
+
+`oldbalanceOrg`: Initial balance before the transaction for the originating customer.  
+
+`newbalanceOrig`: New balance after the transaction for the originating customer.  
+
+`nameDest`: Customer who is the recipient of the transaction. (Note: there is no information for customers starting with 'M' — Merchants).  
+
+`oldbalanceDest`: Initial balance of the recipient before the transaction.  
+
+`newbalanceDest`: New balance of the recipient after the transaction. (Note: no information for customers starting with 'M' — Merchants).  
+
+`isFraud`: A flag indicating if the transaction was made by a fraudulent agent within the simulation. Fraudulent behavior involves taking control of customer accounts to empty funds, transferring to another account, and then cashing out of the system.  
+
+`isFlaggedFraud`: A flag indicating whether the transaction was flagged as fraud. The business model flags attempts to transfer more than 200,000 in a single transaction as illegal.  
+
 
 
 <br>
@@ -76,14 +103,90 @@ Dataset consists of 6,362,620 with 11 columns - incl. transaction type, amount, 
 <br>
 
 ## 🚩Data Analysis Plan
+**What problems are we trying to solve?**
+
+- How is fraudulent transactions different to normal transactions?
+- Are there any time-based / behavioral patterns?
+- Is the pattern coming from the same customer or from different customers?
+- What types of fraudulent activities can we assume from the results?
+- How will the results of the analysis be used or applied?
+- Is the given data it sufficient for the analysis?
+
+<br>
+
+**Information we can draw from the the dataset:**
+
+- Finding relationships between time-based patterns / money movement / transaction amount using scatterplot.
+- Aggregate rows by individual ID to identify duplicate IDs and activities
+- Identify any sequential pattern by sorting in specific orders
+- movement of money between closing and opening balance using positive and negative bars
 
 <br>
 
 ## 🚩Preprocessing Data (optional) - Stratified Data Sampling 
+To scale down rows from 6M → 1M 
+
+**Recommend when:** you want to reduce computational cost and uncover general trends. 
+
+**Not recommend:** if your analysis require precise numbers.
+
+```{python} 
+pip install pandas scikit-learn
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+```
+
+```{python} 
+df = pd.read_csv('fraud_original.csv')
+
+X = df.drop(columns=['isFraud'])
+y = df['isFraud']
+
+_, sampled = train_test_split(df, test_size=0.2, stratify=y, random_state=42)
+
+```
+
+```{python} 
+# Original vs sampled by ratio
+
+print(df['isFraud'].value_counts(normalize=True))
+print(sampled['isFraud'].value_counts(normalize=True))
+```
+![image](https://github.com/user-attachments/assets/556f14c6-17aa-473e-972b-e978af895e9c)
+
+
+```{python} 
+# Original vs sampled by length
+
+print(df['isFraud'].value_counts()) in j
+```
+![image](https://github.com/user-attachments/assets/e4da2089-f15b-4c6f-9542-61c04c329e15)
+
+```{python} 
+print(sampled['isFraud'].value_counts())
+```
+![image](https://github.com/user-attachments/assets/d51b00de-2c7f-4f8b-96e0-fa7716697142)
+
+```{python} 
+sampled.to_csv('fraud_sampled.csv', index=True)
+files.download('fraud_sampled.csv')
+```
 
 <br>
 
 ## 🚩Preprocessing Data - Cleaning and Transforming
+
+1. Drop transaction amount = $0
+
+2. Create an index column (starting from 1) to keep transactions in order (Power Query)
+
+3. There are 744 steps, ranging from 1 to 744, with each step corresponding to one hour. Each step contains thousands of transaction rows. Convert step to day format e.g. steps 1~23 as day 1, steps 24~47 as day 2 …so on
+
+```{DAX} 
+day = INT(DIVIDE([step] - 1, 23)) + 1
+```
 
 <br>
 

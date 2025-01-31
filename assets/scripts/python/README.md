@@ -1,4 +1,4 @@
-## Stratified Sampling
+## Data Sampling - Stratified Sampling Method
 
 https://colab.research.google.com/drive/12AzNCDb7oPWR3WQJVPh9kN9V01MplmZb?usp=sharing
 

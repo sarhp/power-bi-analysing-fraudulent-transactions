@@ -1,6 +1,8 @@
 # End-to-end Project: Analysing Fraudulent Transactions
 
-<br><br>
+<br>
+
+## One-Page Summary
 
 | **Title**              | Summary |
 |------------------------|-------------|

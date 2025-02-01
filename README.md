@@ -233,19 +233,21 @@ RETURN FORMAT(Day, "0") & "." & FORMAT(Index, "0000000")
 ## 🚩Dashboard
 
 1/5. Overview - characteristics of fraud vs normal transactions
-![dashboard_1](https://github.com/user-attachments/assets/8b9cc318-7ab7-48f6-a4ad-af7c96ef16c5)
+![dashboard_1](https://github.com/user-attachments/assets/a90ec2d9-ac02-4b63-bda3-bd53318ffbea)
+![dashboard_1 1](https://github.com/user-attachments/assets/82381006-2d5b-400a-b3a2-ac481372e27f)
 
 2/5. Distribution - time-based / transaction amount using scatterplot. 
-![dashboard_2](https://github.com/user-attachments/assets/96aaa21e-c38f-4467-aef6-9c4df8424389)
+![dashboard_2](https://github.com/user-attachments/assets/1fee2195-0830-41e8-9ee5-512f5476d497)
 
 3/5. Repeated IDs and its activities 
-![dashboard_3](https://github.com/user-attachments/assets/076bcd41-4dfe-42b6-9981-63a2311586d5)
+![dashboard_3](https://github.com/user-attachments/assets/e3deec82-0eb3-4346-a60c-00edddbbe0b8)
 
 4/5. Sequential patterns
-![dashboard_4](https://github.com/user-attachments/assets/95a43229-cbb8-4366-8557-87c8c68c4526)
+![dashboard_4](https://github.com/user-attachments/assets/31b80071-89a9-4e55-b22a-4285cd1ea2bf)
 
 5/5. Cashflow (sender & payee)
-![dashboard_5](https://github.com/user-attachments/assets/b510bcc0-f334-4c17-ac76-54d9e481c83e)
+![dashboard_5](https://github.com/user-attachments/assets/b4d8297b-4dc4-4231-a259-9c8fa66ad663)
+
 
 <br>
 

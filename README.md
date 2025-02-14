@@ -5,7 +5,7 @@
 ## Summary
 
 **Date Created**<br>
-August 2024
+August 2024 (modified Jan 2025)
 
 **Project Objective**<br>
 Perform exploratory data analysis to uncover patterns and trends in fraudulent transactions. 

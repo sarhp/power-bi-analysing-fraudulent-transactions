@@ -59,7 +59,11 @@ Conclusion: <br>
 <br>
 
 ## Workflow
-![workflow](https://github.com/user-attachments/assets/2df96530-3cb3-479d-a13d-d555afc8838f)
+1. Get data from Kaggle
+2. [Python] Reduce row size from 6M to 1M using stratified data sampling method in Python
+3. [Power Query]Create index column and filter out rows with transaction $0
+4. [Power BI DAX] Time-series analysis using Time-Based Aggregation, Dense-Ranking, Sorting, Concatenation, Calculated Columns to ensure that the trends are clear in the visualisation  
+5. [Power BI] Build a dashboard
 
 <br>
 
@@ -75,14 +79,24 @@ Conclusion: <br>
 
 <br>
 
-## User Story
-![user_story](https://github.com/user-attachments/assets/c4d537da-ab97-4747-aede-f1dfede39771)
+## User story
+A manager in a fraud team wants to identify patterns and understand the behaviour behind fraudulent transactions.
+
+They aim to proactively plan for emerging risks, build more accurate fraud detection models, and make better decisions in transaction monitoring. 
 
 
 <br>
 
-## Problem Statement
-![questions_before_analysis](https://github.com/user-attachments/assets/a6498d67-8a66-49be-8fcd-cc74846ba816)
+## Questions to ask before conducting analysis
+1. Are there any repetitive / cyclic behaviour or time-based patterns in fraudulent transactions?
+2. What type of fraudulent activity can we suspect based on the identified patterns?
+3. What can we do to prevent fraudulent transactions?
+
+**How should we use our data to answer these questions:**<br>
+- Find relationsips betwewn time-based patterns / money movement / transaction amount
+- Interrogate repeating customers IDs
+- Sort data in order based on time, amount, etc to identify unusual sequences
+- Use of positive & negative bars to identify movement of money between accounts
 
 <br>
 
@@ -151,13 +165,13 @@ files.download('fraud_sampled.csv')
 
 3. Rename columns for readability
 
-`step` ➡️ `hour`
+`step` ➡ `hour`
 
-`nameDest`, `nameOrig` ➡️ `payeeID` `senderID`
+`nameDest`, `nameOrig` to `payeeID` `senderID`
 
-`oldbalanceOrg` , `newbalanceOrg` ➡️ `senderOpeningBal`, `senderClosingBal` 
+`oldbalanceOrg` , `newbalanceOrg` to `senderOpeningBal`, `senderClosingBal` 
 
-`oldbalanceOrg` , `newbalanceOrg` ➡️ `payeeOpeningBal`, `payeeClosingBal`
+`oldbalanceOrg` , `newbalanceOrg` to `payeeOpeningBal`, `payeeClosingBal`
 
 <br>
 
@@ -274,13 +288,27 @@ RETURN FORMAT(Day, "0") & "." & FORMAT(Index, "0000000")
 
 <br>
 
-## 👩🏻‍💻Analysis
+## Analysis
+- **Frequency of Traudulent Transactions Increases Over Time** - Over a 30-day period, the number of transactions increases daily, following a nearly linear trend.
+- **Escalating Transaction Patterns** - Large transactions occur daily or every two days from Day 1 - 18, then become more intense starting from Day 19 - 31.
+- **TRANSFER immediately follows by CASH_OUT** - In every first transactions, the balance gets emptied, and in the subsequent ones, the same amount gets deposited into dofferent accounts. 
 
-![findings](https://github.com/user-attachments/assets/94cd3ceb-795f-407d-92a6-f543defea23f)
+### Suspected Fraudulent Activities based on the Findings
 
-![suspected](https://github.com/user-attachments/assets/a0b163dc-338e-4796-8042-2098036cb528)
+**Money Laundering** <br>
+Reason: CASH_OUT and TRANSFER are the most common methods to hide /  layer money. Moreover, back-to-bacl and multiple transactions are also commonly seen in money laundering activities. <br>
 
-![action_plan](https://github.com/user-attachments/assets/0f2e169c-0959-4e0e-8395-b89d7bd6227f)
+### Action Plan <br>
+**Liaise with different team and request for additional data to interrogate further:**
+
+- Geographical data to identify location-based transaction patterns (e.g. ATM transaction clusters, or Ip address)
+Precise transaction time to correctly identify the time-based pattern.
+- References in transactions - to investigate how they disguise fraudulent transactions.
+- Information gathered from the front-line team's interactions with customers, in relation to potential fraudulent activity.
+
+**Keep monitoring the next wave of financial transactions, paying attention to the patterns identified earlier, and comparing it with historical data.**
+
+**Stay updated on new types and methods of scams and fraudulent activities, especially money laundering.**
 
 
 

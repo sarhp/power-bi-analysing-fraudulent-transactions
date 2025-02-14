@@ -37,7 +37,7 @@ Conclusion: <br>
 •  Request for additional data to interrogate further <br>
 •  Continuously monitor the next wave of transactions, particularly focusing on the patterns identified earlier <br>
 
-Challenges / Constraints: <br>
+**Challenges / Constraints:** <br>
 •  Due to the private nature of the data, there are limitations in conducting an in-depth analysis because of restricted information <br>
 • High computational cost due to the size of the data (6M rows) <br>
 • Data error –  in CASH_OUT transactions, money is transferred to a payee when there should be no recipient <br>

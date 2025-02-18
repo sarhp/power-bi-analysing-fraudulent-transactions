@@ -4,43 +4,15 @@
 
 ## Summary
 
-**Date Created**<br>
-August 2024 (modified Jan 2025)
-
-**Project Objective**<br>
-Perform exploratory data analysis to uncover patterns and trends in fraudulent transactions. 
-
-**Domain**<br>
-Banking / Financial Crime
-
-**Tools & Skills**<br>
-Power BI (DAX): Time-Based Aggregation, Dense-Ranking, Sorting, Concatenation (using a dot separator), Calculated Columns <br>
-Power Query: Creating Index, Filtering Rows <br>
-Python: Data Sampling (Stratified method using Scikit-Learn)
-
-**About Dataset**<br>
-Synthetic Financial Datasets for Fraud Detection:
-https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download
-
-6,362,620 rows, 11 columns - incl. transaction type, amount, sender and receiver id, sender balance beforeA and after transaction, receivers balance before and after transaction. 
-
-
-**Findings / Conclusion**<br>
-
-Findings:<br>
-•  Frequency of fraudulent transactions increases over time <br>
-•  Periodic surge around every 500,000th transaction <br>
-•  TRANSFER immediately follows by CASH_OUT  (in the first transaction, fraudsters empties a balance. Subsequently, the same amount of money gets deposited into a different account) <br>
-
-Conclusion: <br>
-•  The cash flow patterns suggest possible money laundering activity <br>
-•  Request for additional data to interrogate further <br>
-•  Continuously monitor the next wave of transactions, particularly focusing on the patterns identified earlier <br>
-
-**Challenges / Constraints:** <br>
-•  Due to the private nature of the data, there are limitations in conducting an in-depth analysis because of restricted information <br>
-• High computational cost due to the size of the data (6M rows) <br>
-• Data error –  in CASH_OUT transactions, money is transferred to a payee when there should be no recipient <br>
+| **Section**              | **Details**                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **Date Created**          | August 2024 (modified Jan 2025)                                              |
+| **Project Objective**     | Perform exploratory data analysis to uncover patterns and trends in fraudulent transactions. |
+| **Domain**                | Banking / Financial Crime                                                   |
+| **Tools & Skills**        | **Power BI (DAX):** Time-Based Aggregation, Dense-Ranking, Sorting, Concatenation (using a dot separator), Calculated Columns <br> **Power Query:** Creating Index, Filtering Rows <br> **Python:** Data Sampling (Stratified method using Scikit-Learn) |
+| **About Dataset**         | [Synthetic Financial Datasets for Fraud Detection](https://www.kaggle.com/datasets/ealaxi/paysim1?resource=download) <br> 6,362,620 rows, 11 columns - incl. transaction type, amount, sender and receiver id, sender balance before and after transaction, receivers balance before and after transaction. |
+| **Findings / Conclusion** | **Findings:** <br> • Frequency of fraudulent transactions increases over time <br> • Periodic surge around every 500,000th transaction <br> • TRANSFER immediately follows by CASH_OUT (in the first transaction, fraudsters empty a balance. Subsequently, the same amount of money gets deposited into a different account) <br> **Conclusion:** <br> • The cash flow patterns suggest possible money laundering activity <br> • Request for additional data to interrogate further <br> • Continuously monitor the next wave of transactions, particularly focusing on the patterns identified earlier |
+| **Challenges / Constraints** | • Due to the private nature of the data, there are limitations in conducting an in-depth analysis because of restricted information <br> • High computational cost due to the size of the data (6M rows) <br> • Data error – in CASH_OUT transactions, money is transferred to a payee when there should be no recipient |
 
 
 <br>
@@ -165,7 +137,7 @@ files.download('fraud_sampled.csv')
 
 3. Rename columns for readability
 
-`step` ➡ `hour`
+`step` to `hour`
 
 `nameDest`, `nameOrig` to `payeeID` `senderID`
 
